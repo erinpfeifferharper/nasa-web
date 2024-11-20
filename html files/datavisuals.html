@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is the data visuals page of nasa asteriod api website"
+    />
+    <title>data visuals</title>
+    <link rel="stylesheet" href="../css files/style.css" />
+    <link rel="stylesheet" href="../css files/api.css" />
+    <script
+      src="https://kit.fontawesome.com/85c4a0174a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <meta property="og:site name" content="Asteriods" />
+    <meta property="og:title" content="Data Visuals" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Welcome to Asteriods, the website that utilises the NASA API Asteriod NeoWs"
+    />
+    <meta property="og:locale" content="en_UK" />
+    <meta name="author" content="Erin Pfeiffer Harper" />
+    <meta property="article:tag" content="Web Development" />
+    <meta property="place:location:country_name" content="South Africa" />
+  </head>
+  <body>
+    <a href="#" class="to-top"><i class="fa fa-thin fa-arrow-up"></i></a>
+    <script src="../js files/scroll.js"></script>
+
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <section class="sidebar">
+      <header>menu</header>
+      <a href="../index.html"><span>home</span></a>
+      <a href="../html files/about.html"><span>about</span></a>
+      <a href="../html files/datavisuals.html"><span>data visuals</span></a>
+      <a href="../html files/dataart.html"><span>data art</span></a>
+      <a href="../html files/blogs.html"><span>blog</span></a>
+      <a href="../html files/design.html"><span>design</span></a>
+    </section>
+
+    <section class="dataheader">
+      <h1>data visuals</h1>
+      <p>This section portrays my data visualisations relating to my api:</p>
+    </section>
+
+    <section class="center-container">
+      <label for="dateInput">enter date (yyyy-mm-dd):</label>
+      <input type="date" id="dateInput" name="dateInput" value="2023-09-01" />
+      <button id="loadData">load asteroids data</button>
+      <div id="output"></div>
+      <section class="charts-container">
+        <div class="chart">
+          <div id="diameterChart"></div>
+          <div class="chart-info" id="diameterChartInfo">
+            <h3>Asteroid Diameter Vs. Asteroid Name Bar Chart</h3>
+            <p>
+              This chart is a bar chart that visually represents the diameter of
+              asteroids in meters alongside their corresponding names. The
+              x-axis of the chart ranges from 0 to the number of asteroids for
+              the selected date. Each asteroid's name is displayed along the
+              y-axis, and the length of the bars extending from the x-axis to
+              the asteroid's diameter indicates its size. The first asteroid is
+              represented at 0, the second at 1, and so on. This chart provides
+              a straightforward and easy-to-read visualization of the relative
+              sizes of different asteroids on the selected date. Users can
+              quickly compare the diameters of asteroids by looking at the
+              length of the bars.
+            </p>
+          </div>
+        </div>
+
+        <div class="chart">
+          <div id="distanceChart"></div>
+          <div class="chart-info" id="distanceChartInfo">
+            <h3>Distance from Earth Vs. Asteroid Name Scatterplot Chart</h3>
+            <p>
+              In this scatterplot chart, the distance of asteroids from Earth in
+              megameters is plotted against the name of each asteroid. The
+              x-axis ranges from 0 to the number of asteroids for the chosen
+              date, with each point on the chart corresponding to an asteroid.
+              The y-axis represents the distance from Earth for each asteroid.
+              Scatterplot charts are useful for showing the distribution of data
+              points. In this case, users can easily observe how different
+              asteroids are distributed in terms of their distances from Earth.
+              This chart helps users identify which asteroids are closer or
+              farther from Earth on the selected date.
+            </p>
+          </div>
+        </div>
+
+        <div class="chart">
+          <div id="bubbleChart"></div>
+          <div class="chart-info" id="bubbleChartInfo">
+            <h3>Distance from Earth Vs. Asteroid Diameter Bubble Chart</h3>
+            <p>
+              This chart combines the information from the previous two charts,
+              displaying both the distance of asteroids from Earth and their
+              diameters. Each asteroid is represented as a bubble on the chart.
+              The x-axis ranges from 0 to the number of asteroids for the chosen
+              date, just like in the other charts. The y-axis represents the
+              distance from Earth in megameters, and the size of each bubble
+              corresponds to the diameter of the asteroid. The larger the
+              bubble, the larger the asteroid's diameter. By combining these two
+              dimensions, this chart allows users to explore the relationship
+              between the size of asteroids and their distance from Earth on the
+              selected date. Larger bubbles indicate larger asteroids, and the
+              position of each bubble on the chart shows how close or distant
+              the asteroid is from Earth.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <script src="../js files/api.js"></script>
+    </section>
+
+    <footer class="footer">
+      <h4>about me</h4>
+      <p>Made by Erin Pfeiffer Harper</p>
+      <p>Find me on the following platforms</p>
+      <section class="icons">
+        <a href="https://www.instagram.com/curlygirl.e/"
+          ><i class="fa fa-brands fa-instagram"></i
+        ></a>
+        <a href="www.linkedin.com/in/erin-harper-60311624a"
+          ><i class="fa fa-brands fa-linkedin"></i
+        ></a>
+        <i class="fa fa-brands fa-discord"></i>
+        <a href="https://github.com/curlygirle"
+          ><i class="fa fa-brands fa-github"></i
+        ></a>
+      </section>
+    </footer>
+  </body>
+</html>

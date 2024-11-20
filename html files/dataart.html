@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is the data art page of nasa asteriod api website"
+    />
+    <title>data art</title>
+    <link rel="stylesheet" href="../css files/style.css" />
+    <link rel="stylesheet" href="../css files/art.css" />
+    <script
+      src="https://kit.fontawesome.com/85c4a0174a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <meta property="og:site name" content="Asteriods" />
+    <meta property="og:title" content="Data Art" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Welcome to Asteriods, the website that utilises the NASA API Asteriod NeoWs"
+    />
+    <meta property="og:locale" content="en_UK" />
+    <meta name="author" content="Erin Pfeiffer Harper" />
+    <meta property="article:tag" content="Web Development" />
+    <meta property="place:location:country_name" content="South Africa" />
+  </head>
+  <body>
+    <a href="#" class="to-top"><i class="fa fa-thin fa-arrow-up"></i></a>
+    <script src="../js files/scroll.js"></script>
+
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <section class="sidebar">
+      <header>menu</header>
+      <a href="../index.html"><span>home</span></a>
+      <a href="../html files/about.html"><span>about</span></a>
+      <a href="../html files/datavisuals.html"><span>data visuals</span></a>
+      <a href="../html files/dataart.html"><span>data art</span></a>
+      <a href="../html files/blogs.html"><span>blog</span></a>
+      <a href="../html files/design.html"><span>design</span></a>
+    </section>
+
+    <section class="dataheader">
+      <h1>data art</h1>
+      <p>This section portrays my data art relating to my api:</p>
+    </section>
+
+    <section class="center-container">
+      <input type="date" id="dateInput" />
+      <button id="loadData">Load Asteroids Art</button>
+      <svg id="orbit-map"></svg>
+      <div id="tooltip" class="tooltip" style="opacity: 0"></div>
+
+      <div id="network-map-container">
+        <svg id="network-map"></svg>
+      </div>
+    </section>
+
+    <section>
+      <script src="../js files/art.js"></script>
+    </section>
+
+    <footer class="footer">
+      <h4>about me</h4>
+      <p>Made by Erin Pfeiffer Harper</p>
+      <p>Find me on the following platforms</p>
+      <section class="icons">
+        <a href="https://www.instagram.com/curlygirl.e/"
+          ><i class="fa fa-brands fa-instagram"></i
+        ></a>
+        <a href="www.linkedin.com/in/erin-harper-60311624a"
+          ><i class="fa fa-brands fa-linkedin"></i
+        ></a>
+        <i class="fa fa-brands fa-discord"></i>
+        <a href="https://github.com/curlygirle"
+          ><i class="fa fa-brands fa-github"></i
+        ></a>
+      </section>
+    </footer>
+  </body>
+</html>
